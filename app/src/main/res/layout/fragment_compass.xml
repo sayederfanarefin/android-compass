@@ -170,20 +170,7 @@
         android:layout_height="80dp"
         android:layout_gravity="bottom">
 
-        <info.sayederfanarefin.compass.view.RobotoTextView
-            android:id="@+id/txt_sunrise"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:clickable="true"
-            android:drawableLeft="@drawable/ic_sunrise"
-            android:drawableStart="@drawable/ic_sunrise"
-            android:ellipsize="end"
-            android:foreground="?selectableItemBackground"
-            android:gravity="center_vertical"
-            android:maxLines="1"
-            android:padding="8dp"
-            android:text="..." />
+
 
         <info.sayederfanarefin.compass.sensor.view.AccelerometerView
             android:id="@+id/accelerometer_view"
@@ -191,20 +178,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <info.sayederfanarefin.compass.view.RobotoTextView
-            android:id="@+id/txt_sunset"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:clickable="true"
-            android:drawableEnd="@drawable/ic_sunset"
-            android:drawableRight="@drawable/ic_sunset"
-            android:ellipsize="end"
-            android:foreground="?selectableItemBackground"
-            android:gravity="center_vertical"
-            android:maxLines="1"
-            android:padding="8dp"
-            android:text="..." />
+
 
     </LinearLayout>
 

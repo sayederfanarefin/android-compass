@@ -37,7 +37,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
     public static final String TAG = "CompassFragment";
     private static final int REQUEST_ENABLE_GPS = 1002;
     private TextView mTxtAddress;
-//    private TextView mTxtSunrise, mTxtSunset;
+
     private TextView mTxtPitch, mTxtRoll;
     private TextView mTxtLonLat, mTxtAltitude;
     private TextView mTxtPressure, mTxtHumidity, mTxtTemp;
@@ -185,12 +185,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
             }
         }
         if (locationData != null) {
-            //sunshine
-//            Sunshine sunshine = locationData.getSunshine();
-//            if (sunshine != null) {
-//                mTxtSunrise.setText(sunshine.getReadableSunriseTime());
-//                mTxtSunset.setText(sunshine.getReadableSunsetTime());
-//            }
+
 
             //weather
             int resId = Utility.getIconResourceForWeatherCondition(locationData.getId());
