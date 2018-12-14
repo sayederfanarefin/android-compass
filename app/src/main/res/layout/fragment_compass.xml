@@ -6,10 +6,6 @@
     android:padding="12dp"
     android:orientation="vertical">
 
-
-
-
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -55,7 +51,7 @@
         android:gravity="center_vertical"
         android:marqueeRepeatLimit="marquee_forever"
         android:maxLines="1"
-
+        android:layout_marginTop="16dp"
         android:scrollHorizontally="true"
         android:singleLine="true"
         android:text="Waiting for GPS signal..."
