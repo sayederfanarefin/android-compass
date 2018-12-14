@@ -183,18 +183,19 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
         if (locationData != null) {
 
             //address
-            mTxtAddress.setText(locationData.getAddressLine());
+            mTxtAddress.setText("Address: " + locationData.getAddressLine());
 
             //location
             float longitude = (float) locationData.getLongitude();
             float latitude = (float) locationData.getLatitude();
             String lonStr = Utility.formatDms(longitude) + " " + getDirectionText(longitude);
             String latStr = Utility.formatDms(latitude) + " " + getDirectionText(latitude);
-            mTxtLonLat.setText(String.format("%s\n%s", lonStr, latStr));
+            String latlon = "Coordinate: " + String.format("%s\n%s", lonStr, latStr);
+            mTxtLonLat.setText(latlon);
 
             //altitude
             double altitude = locationData.getAltitude();
-            mTxtAltitude.setText(String.format(Locale.US, "%d m", (long) altitude));
+            mTxtAltitude.setText("Altitude: " + String.format(Locale.US, "%d m", (long) altitude));
         }
     }
 }

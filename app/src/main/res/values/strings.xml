@@ -1,39 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Compass</string>
 
-    <!-- Label for the location preference [CHAR LIMIT=NONE] -->
 
-    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
-
-    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
-
-    <!-- Label for the location preference [CHAR LIMIT=NONE] -->
-
-    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
-
-    <!-- Default temperature units -->
-
-    <!-- Date label when displaying today's weather forecast [CHAR LIMIT=20] -->
-
-    <!-- Date label when displaying tomorrow's weather forecast [CHAR LIMIT=20] -->
-
-    <!-- Date format for displaying day of week and date (i.e. Mon Jun 1) [CHAR LIMIT=20] -->
-
-    <!-- Strings for formatting weather-related data -->
-    <!-- Temperature format [CHAR LIMIT=5] -->
-
-    <!-- Windspeed formats -->
-    <!-- Wind in mph [CHAR LIMIT=25] -->
-
-    <!-- Wind in kph [CHAR LIMIT=25] -->
-
-    <!-- Pressure format CHAR LIMIT=25] -->
-
-    <!-- Humidity format CHAR LIMIT=25]-->
-
-    <!-- Strings related to Notification preference -->
-
-    <!-- Strings related to Notification preferences -->
 
     <!-- Notification Format -->
     <string name="compass">Compass</string>
@@ -43,4 +11,11 @@
 
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"></string>
     <string name="permission_denide">Permission denide. Please enable read location permission</string>
+
+
+    <string name="app_id">Permission denide. Please enable read location permission</string>
+    <string name="bottom_ad">ca-app-pub-7807255418905727/8790931495</string>
+    <string name="interstitial">ca-app-pub-7807255418905727/8599359808</string>
+
+
 </resources>

@@ -7,32 +7,14 @@
     android:orientation="vertical">
 
 
-    <info.sayederfanarefin.compass.view.RobotoTextView
-        android:id="@+id/txt_address"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_gps_fixed_white_24dp"
-        android:drawablePadding="8dp"
-        android:drawableStart="@drawable/ic_gps_fixed_white_24dp"
-        android:ellipsize="marquee"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:gravity="center_vertical"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:maxLines="1"
-        android:padding="8dp"
-        android:scrollHorizontally="true"
-        android:singleLine="true"
-        android:text="Waiting for GPS signal..."
-        android:textColor="?android:textColorPrimary" />
+
 
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        tools:context="info.sayederfanarefin.compass.info.duy.compass.MainActivity">
+        tools:context="info.sayederfanarefin.compass.MainActivity">
 
         <info.sayederfanarefin.compass.sensor.view.CompassView2
             android:id="@+id/compass_view"
@@ -44,6 +26,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:padding="8dp"
         android:layout_gravity="bottom">
 
 
@@ -58,83 +41,91 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <info.sayederfanarefin.compass.view.RobotoTextView
+        android:id="@+id/txt_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_gps_fixed_white_24dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_gps_fixed_white_24dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Waiting for GPS signal..."
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="?android:textColorPrimary" />
+
+    <info.sayederfanarefin.compass.view.RobotoTextView
+        android:id="@+id/txt_lon_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_location_on_white_24dp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_location_on_white_24dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Waiting for GPS signal..."
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="?android:textColorPrimary" />
+
+    <info.sayederfanarefin.compass.view.RobotoTextView
+        android:id="@+id/txt_altitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_altitude_white"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_altitude_white"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Waiting for GPS signal..."
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="?android:textColorPrimary" />
 
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:foreground="?selectableItemBackground"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_location_on_white_24dp"
-                android:tint="@color/compass_text_primary_color" />
-
-            <info.sayederfanarefin.compass.view.RobotoTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="LOCATION"
-                android:textColor="?android:textColorPrimary"
-                android:textStyle="bold" />
-
-            <info.sayederfanarefin.compass.view.RobotoTextView
-                android:id="@+id/txt_lon_lat"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:foreground="?selectableItemBackground"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:gravity="center"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_altitude_white"
-                android:tint="@color/compass_text_primary_color" />
-
-            <info.sayederfanarefin.compass.view.RobotoTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="ALTITUDE"
-                android:textColor="?android:textColorPrimary"
-                android:textStyle="bold" />
-
-            <info.sayederfanarefin.compass.view.RobotoTextView
-                android:id="@+id/txt_altitude"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-        </LinearLayout>
-    </LinearLayout>
 
 
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
 
 
 </LinearLayout>
