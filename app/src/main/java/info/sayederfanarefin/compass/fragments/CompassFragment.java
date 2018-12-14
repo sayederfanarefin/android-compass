@@ -40,8 +40,8 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
 
     private TextView mTxtPitch, mTxtRoll;
     private TextView mTxtLonLat, mTxtAltitude;
-    private TextView mTxtPressure, mTxtHumidity, mTxtTemp;
-    private ImageView mImgWeather;
+
+
     private LocationHelper mLocationHelper;
     private CompassView2 mCompassView;
     private AccelerometerView mAccelerometerView;
@@ -96,10 +96,6 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
         mCompassView = (CompassView2) findViewById(R.id.compass_view);
         mAccelerometerView = (AccelerometerView) findViewById(R.id.accelerometer_view);
 
-        mTxtPressure = (TextView) findViewById(R.id.txt_pressure);
-        mTxtHumidity = (TextView) findViewById(R.id.txt_humidity);
-        mImgWeather = (ImageView) findViewById(R.id.img_weather);
-        mTxtTemp = (TextView) findViewById(R.id.txt_temp);
     }
 
     @Override
@@ -185,14 +181,6 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
             }
         }
         if (locationData != null) {
-
-
-            //weather
-            int resId = Utility.getIconResourceForWeatherCondition(locationData.getId());
-            if (resId != -1) mImgWeather.setImageResource(resId);
-            mTxtPressure.setText(String.format(Locale.US, "%s hPa", locationData.getPressure()));
-            mTxtHumidity.setText(String.format(Locale.US, "%s %%", locationData.getHumidity()));
-            mTxtTemp.setText(Utility.formatTemperature(getContext(), locationData.getTemp()));
 
             //address
             mTxtAddress.setText(locationData.getAddressLine());
