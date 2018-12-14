@@ -7,7 +7,7 @@ import android.hardware.SensorManager;
 import java.util.List;
 
 /**
- * Created by Duy on 10/21/2017.
+ * Created by Sayed Erfan Arefin on 10/21/2018.
  */
 
 public class SensorUtil {

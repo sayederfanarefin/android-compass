@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Duy on 10/17/2017.
+ * Created by Sayed Erfan Arefin on 10/17/2018.
  */
 
 public abstract class BaseFragment extends Fragment {

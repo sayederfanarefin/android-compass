@@ -15,7 +15,7 @@ import info.sayederfanarefin.compass.sensor.model.SensorValue;
 import info.sayederfanarefin.compass.utils.DLog;
 
 /**
- * Created by Duy on 10/20/2017.
+ * Created by Sayed Erfan Arefin on 10/20/2018.
  */
 
 public class AccelerometerDrawer {

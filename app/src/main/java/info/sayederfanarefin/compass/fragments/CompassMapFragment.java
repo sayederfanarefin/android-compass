@@ -13,7 +13,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
- * Created by Duy on 10/17/2017.
+ * Created by Sayed Erfan Arefin on 10/17/2018.
  */
 
 public class CompassMapFragment extends BaseFragment implements OnMapReadyCallback {

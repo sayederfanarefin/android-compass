@@ -10,7 +10,7 @@ import info.sayederfanarefin.compass.location.model.LocationData;
 import info.sayederfanarefin.compass.location.model.Sunshine;
 
 /**
- * Created by Duy on 10/26/2017.
+ * Created by Sayed Erfan Arefin on 10/26/2018.
  */
 
 public class CompassPref {

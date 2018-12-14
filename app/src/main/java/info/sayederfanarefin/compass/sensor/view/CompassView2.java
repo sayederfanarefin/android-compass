@@ -12,7 +12,7 @@ import info.sayederfanarefin.compass.sensor.model.SensorValue;
 import info.sayederfanarefin.compass.sensor.drawer.CompassDrawer;
 
 /**
- * Created by Duy on 10/15/2017.
+ * Created by Sayed Erfan Arefin on 10/15/2018.
  */
 
 public class CompassView2 extends View {

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Created by Duy on 10/16/2017.
+ * Created by Sayed Erfan Arefin on 10/16/2018.
  */
 
 public class GetDataTask extends AsyncTask<Location, Object, LocationData> {

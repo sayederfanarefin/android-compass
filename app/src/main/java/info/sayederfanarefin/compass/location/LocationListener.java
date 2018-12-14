@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import info.sayederfanarefin.compass.utils.DLog;
 
 /**
- * Created by Duy on 10/16/2017.
+ * Created by Sayed Erfan Arefin on 10/16/2018.
  */
 
 public class LocationListener implements android.location.LocationListener {

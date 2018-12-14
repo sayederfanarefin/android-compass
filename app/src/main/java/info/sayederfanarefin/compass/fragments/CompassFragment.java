@@ -29,16 +29,14 @@ import java.util.Locale;
 import static info.sayederfanarefin.compass.utils.Utility.getDirectionText;
 
 /**
- * Created by Duy on 10/17/2017.
+ * Created by Sayed Erfan Arefin on 10/17/2018.
  */
 
 public class CompassFragment extends BaseFragment implements SensorListener.OnValueChangedListener,
         LocationHelper.LocationDataChangeListener {
-    public static final String TAG = "CompassFragment";
     private static final int REQUEST_ENABLE_GPS = 1002;
     private TextView mTxtAddress;
 
-    private TextView mTxtPitch, mTxtRoll;
     private TextView mTxtLonLat, mTxtAltitude;
 
 
@@ -87,8 +85,6 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
         mTxtAddress = (TextView) findViewById(R.id.txt_address);
         mTxtAddress.setSelected(true);
 
-//        mTxtSunrise = (TextView) findViewById(R.id.txt_sunrise);
-//        mTxtSunset = (TextView) findViewById(R.id.txt_sunset);
 
         mTxtLonLat = (TextView) findViewById(R.id.txt_lon_lat);
         mTxtAltitude = (TextView) findViewById(R.id.txt_altitude);
@@ -140,7 +136,6 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
         return R.layout.fragment_compass;
     }
 
-    //https://stackoverflow.com/questions/39336461/how-can-i-enable-or-disable-the-gps-programmatically-on-android-6-x
     private void buildAlertMessageNoGps() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setMessage("Your GPS seems to be disabled, do you want to enable it?")

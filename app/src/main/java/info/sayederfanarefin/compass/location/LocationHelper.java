@@ -21,7 +21,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import static com.google.android.gms.location.LocationServices.getFusedLocationProviderClient;
 
 /**
- * Created by Duy on 10/16/2017.
+ * Created by Sayed Erfan Arefin on 10/16/2018.
  */
 
 public class LocationHelper {

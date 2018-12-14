@@ -1,7 +1,7 @@
 package info.sayederfanarefin.compass.sensor.model;
 
 /**
- * Created by Duy on 10/16/2017.
+ * Created by Sayed Erfan Arefin on 10/16/2018.
  */
 
 public class SensorValue {

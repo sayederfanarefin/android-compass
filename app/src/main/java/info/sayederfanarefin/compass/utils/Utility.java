@@ -11,7 +11,7 @@ import info.sayederfanarefin.compass.R;
 import java.util.Locale;
 
 /**
- * Created by Duy on 10/16/2017.
+ * Created by Sayed Erfan Arefin on 10/16/2018.
  */
 
 public class Utility {

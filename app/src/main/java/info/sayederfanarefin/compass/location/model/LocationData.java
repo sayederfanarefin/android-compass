@@ -1,7 +1,7 @@
 package info.sayederfanarefin.compass.location.model;
 
 /**
- * Created by Duy on 10/21/2017.
+ * Created by Sayed Erfan Arefin on 10/21/2018.
  */
 
 public class LocationData {

@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.Locale;
 
 /**
- * Created by Duy on 10/15/2017.
+ * Created by Sayed Erfan Arefin on 10/15/2018.
  */
 
 public class Sunshine {

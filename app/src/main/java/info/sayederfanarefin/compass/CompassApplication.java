@@ -6,7 +6,7 @@ import info.sayederfanarefin.compass.BuildConfig;
 import com.google.firebase.crash.FirebaseCrash;
 
 /**
- * Created by Duy on 10/19/2017.
+ * Created by Sayed Erfan Arefin on 10/19/2018.
  */
 
 public class CompassApplication extends Application {

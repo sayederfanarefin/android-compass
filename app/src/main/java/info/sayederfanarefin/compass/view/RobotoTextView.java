@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import info.sayederfanarefin.compass.utils.TypefaceManager;
 
 /**
- * Created by Duy on 10/20/2017.
+ * Created by Sayed Erfan Arefin on 10/20/2018.
  */
 
 public class RobotoTextView extends AppCompatTextView {
