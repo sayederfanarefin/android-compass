@@ -142,6 +142,7 @@ public class CompassDrawer {
         float strokeWidth = realPx(20) + fontHeight;
         mPathPaint.setStrokeWidth(strokeWidth);
         radius = realPx(350) - strokeWidth / 2.0f - realPx(mUnitPadding);
+
         canvas.drawCircle(mCenter.x, mCenter.y, radius, mPathPaint);
     }
 

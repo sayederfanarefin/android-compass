@@ -2,7 +2,6 @@
     <string name="app_name">Compass</string>
 
 
-
     <!-- Notification Format -->
     <string name="compass">Compass</string>
     <string name="setting">Setting</string>
@@ -13,13 +12,15 @@
     <string name="permission_denide">Permission denide. Please enable read location permission</string>
 
 
-    <string name="app_id">ca</string>
-    <string name="bottom_ad">ca</string>
-    <string name="interstitial">ca</string>
+    <!--<string name="app_id">ca</string>-->
+    <!--<string name="bottom_ad">ca</string>-->
+    <!--<string name="interstitial">ca</string>-->
 
-<!--<string name="app_id">ca-app-pub-7807255418905727~6133689008</string>-->
-    <!--<string name="bottom_ad">ca-app-pub-7807255418905727/8790931495</string>-->
-    <!--<string name="interstitial">ca-app-pub-7807255418905727/8599359808</string>-->
+    <string name="proPackageName">info.sayederfanarefin.compasspro</string>
+
+    <string name="app_id">ca-app-pub-7807255418905727~6133689008</string>
+    <string name="bottom_ad">ca-app-pub-7807255418905727/8790931495</string>
+    <string name="interstitial">ca-app-pub-7807255418905727/8599359808</string>
 
 
 </resources>

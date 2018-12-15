@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
@@ -43,7 +44,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
     private static final int REQUEST_ENABLE_GPS = 1002;
     private TextView mTxtAddress;
 
-    private TextView mTxtLonLat, mTxtAltitude;
+    private TextView mTxtLonLat, mTxtAltitude, txt_noAd;
 
     private InterstitialAd mInterstitialAd;
 
@@ -122,6 +123,19 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
             }
         });
 
+
+        txt_noAd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                final String appPackageName = getString(R.string.proPackageName);
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+                }
+            }
+        });
+
     }
 
     private void bindView() {
@@ -131,6 +145,8 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
 
         mTxtLonLat = (TextView) findViewById(R.id.txt_lon_lat);
         mTxtAltitude = (TextView) findViewById(R.id.txt_altitude);
+        txt_noAd = (TextView) findViewById(R.id.txt_noAd);
+
 
         mCompassView = (CompassView2) findViewById(R.id.compass_view);
         mAccelerometerView = (AccelerometerView) findViewById(R.id.accelerometer_view);
