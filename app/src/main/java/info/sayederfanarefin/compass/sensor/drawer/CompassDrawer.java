@@ -131,7 +131,7 @@ public class CompassDrawer {
 
         mPathPaint.setColor(mSecondaryTextColor);
         mPathPaint.setStyle(Style.STROKE);
-        mPathPaint.setStrokeWidth(realPx(3));
+        mPathPaint.setStrokeWidth(realPx(6));
         canvas.drawCircle(mCenter.x, mCenter.y, radius, mPathPaint);
 
         mPathPaint.setColor(mForegroundColor);

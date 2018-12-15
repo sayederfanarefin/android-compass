@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#000000</color>
-    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#191F2E</color>
+    <color name="colorPrimaryDark">#191F2E</color>
     <color name="colorAccent">#BF360C</color>
-    <color name="window_background_color">#000000</color>
+    <color name="window_background_color">#191F2E</color>
 
 
-    <color name="compass_foreground_color">#027800</color>
-    <color name="compass_background_color">#013b00</color>
+    <color name="compass_foreground_color">#404758</color>
+    <color name="compass_background_color">#171A22</color>
 
-    <color name="compass_text_secondary_color">#c0bfc5</color>
-    <color name="compass_text_primary_color">#ffffff</color>
+    <color name="compass_text_secondary_color">#BDBFCB</color>
+    <color name="compass_text_primary_color">#BDBFCB</color>
     <color name="compass_accent_color">#BF360C</color>
 </resources>
