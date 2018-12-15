@@ -91,9 +91,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
 
         MobileAds.initialize(getContext(), getString(R.string.app_id));
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest request = new AdRequest.Builder()
-                //    .addTestDevice("B7ED290654B835116908C4A987760A3E")
-                .build();
+        AdRequest request = new AdRequest.Builder().build();
         mAdView.loadAd(request);
 
 
