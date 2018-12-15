@@ -80,7 +80,6 @@ public class CompassDrawer {
         initPaint();
 
         drawBackground(canvas);
-        drawMagnetic(canvas);
         drawClock(canvas);
         drawAzimuthValue(canvas);
         //drawSunTime(canvas);
@@ -147,49 +146,9 @@ public class CompassDrawer {
     }
 
 
-    private void drawMagnetic(Canvas canvas) {
-        float step = realPx(450);
 
-        mPathPaint.setStrokeWidth(realPx(25));
-        mPathPaint.setColor(mBackgroundColor);
 
-        RectF bound = new RectF(mCenter.x - step, mCenter.y - step, mCenter.x + step, mCenter.y + step);
-        int sweepAngle = 100;
 
-        mPath.reset();
-        mPath.addArc(bound, 310, 100);
-        canvas.drawPath(mPath, mPathPaint);
-
-        float magneticField = mSensorValue.getMagneticField();
-        int max = 160;
-        float percent = Math.min(1, magneticField / max);
-        percent = percent * sweepAngle;
-
-        mPath.reset();
-        mPath.addArc(bound, 310 + sweepAngle - percent, percent);
-        canvas.drawPath(mPath, mMagneticPaint);
-
-        mPrimaryTextPaint.setTextSize(realPx(30));
-        drawText(canvas, 303, String.format(Locale.US, "%dμT", (int) mSensorValue.getMagneticField()), 445, mPrimaryTextPaint);
-
-        mSecondaryTextPaint.setTextSize(realPx(30));
-        drawText(canvas, 60, "mag.field", 445, mSecondaryTextPaint);
-    }
-
-    private void drawSunTime(Canvas canvas) {
-        if (mSunshine == null) return;
-        float sunRise = mSunshine.getSunrise();
-        float sunShine = mSunshine.getSunset();
-        mPathPaint.setColor(Color.YELLOW);
-        mPathPaint.setStyle(Style.STROKE);
-        mPathPaint.setStrokeWidth(realPx(10));
-        float step = realPx(405);
-
-        mPath.reset();
-        RectF bound = new RectF(mCenter.x - step, mCenter.y - step, mCenter.x + step, mCenter.y + step);
-        mPath.addArc(bound, sunRise, Math.abs(sunShine - sunRise));
-        canvas.drawPath(mPath, mPathPaint);
-    }
 
     private void drawAzimuthValue(Canvas canvas) {
         //draw triangle
