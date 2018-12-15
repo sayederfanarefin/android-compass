@@ -9,10 +9,16 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import info.sayederfanarefin.compass.R;
 import info.sayederfanarefin.compass.location.LocationHelper;
@@ -39,6 +45,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
 
     private TextView mTxtLonLat, mTxtAltitude;
 
+    private InterstitialAd mInterstitialAd;
 
     private LocationHelper mLocationHelper;
     private CompassView2 mCompassView;
@@ -61,6 +68,7 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
 
         bindView();
 
+
         mLocationHelper = new LocationHelper(this);
         mLocationHelper.setLocationValueListener(this);
         mLocationHelper.onCreate();
@@ -79,6 +87,41 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
         }
 
         onUpdateLocationData(null);
+
+        MobileAds.initialize(getContext(), getString(R.string.app_id));
+        AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest request = new AdRequest.Builder()
+                //    .addTestDevice("B7ED290654B835116908C4A987760A3E")
+                .build();
+        mAdView.loadAd(request);
+
+
+        mInterstitialAd = new InterstitialAd(getContext());
+        mInterstitialAd.setAdUnitId(getString( R.string.interstitial));
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+
+        mTxtLonLat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAd();
+            }
+        });
+
+        mTxtAltitude.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAd();
+            }
+        });
+
+        mTxtAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAd();
+            }
+        });
+
     }
 
     private void bindView() {
@@ -193,4 +236,17 @@ public class CompassFragment extends BaseFragment implements SensorListener.OnVa
             mTxtAltitude.setText("Altitude: " + String.format(Locale.US, "%d m", (long) altitude));
         }
     }
+
+
+    void showAd(){
+
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+
+        }
+    }
+
+
+
 }
