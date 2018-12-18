@@ -10,7 +10,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="7.2"
+        android:layout_weight="7.4"
         tools:context="info.sayederfanarefin.compass.MainActivity">
 
         <info.sayederfanarefin.compass.sensor.view.CompassView2
@@ -109,28 +109,28 @@
         android:layout_marginBottom="4dp"
         android:textColor="?android:textColorPrimary" />
 
-    <info.sayederfanarefin.compass.view.RobotoTextView
-        android:id="@+id/txt_noAd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_compass_white"
-        android:drawablePadding="8dp"
-        android:drawableStart="@drawable/ic_compass_white"
-        android:ellipsize="marquee"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:gravity="center_vertical"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:maxLines="1"
-        android:layout_weight=".2"
-        android:scrollHorizontally="true"
-        android:singleLine="true"
-        android:text="Get pro with no ads"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="4dp"
-        android:textColor="?android:textColorPrimary" />
+    <!--<info.sayederfanarefin.compass.view.RobotoTextView-->
+        <!--android:id="@+id/txt_noAd"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:drawableLeft="@drawable/ic_compass_white"-->
+        <!--android:drawablePadding="8dp"-->
+        <!--android:drawableStart="@drawable/ic_compass_white"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:marqueeRepeatLimit="marquee_forever"-->
+        <!--android:maxLines="1"-->
+        <!--android:layout_weight=".2"-->
+        <!--android:scrollHorizontally="true"-->
+        <!--android:singleLine="true"-->
+        <!--android:text="Get pro with no ads"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:textColor="?android:textColorPrimary" />-->
 
 
 
