@@ -1,8 +1,8 @@
 image: jangrewe/gitlab-ci-android
 
 variables:
-  ANDROID_COMPILE_SDK: "27"
-  APP_NAME: "NameOfYourApp"
+  ANDROID_COMPILE_SDK: "28"
+  APP_NAME: "MeisterKoch"
 
 cache:
   key: ${CI_PROJECT_ID}
@@ -31,10 +31,10 @@ before_script:
     paths:
     - app/build/outputs/
 
-build:develop:
+build:development:
   <<: *build
   only:
-  - develop
+  - development
   script:
   - ./gradlew assembleDebug
 
@@ -53,7 +53,7 @@ build:release:
 #  stage: test
 #  only:
 #  - master
-#  - develop
+#  - development
 #
 #test:unit:
 #  <<: *test
@@ -82,16 +82,16 @@ build:release:
   - export VERSION_NAME=`egrep '^[[:blank:]]+versionName[[:blank:]]'  app/build.gradle | awk '{print $2}' | sed s/\"//g`
   - mkdir -p exported
 
-package:develop:
+package:development:
   <<: *package
   stage: package
   environment: Development
   only:
-  - develop
+  - development
   script:
   - mv app/build/outputs/apk/debug/app-debug.apk ./exported/${APP_NAME}-v$VERSION_NAME-debug.apk
   dependencies:
-  - build:develop
+  - build:development
   artifacts:
     expire_in: 7 days
     paths:
