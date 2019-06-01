@@ -18,9 +18,12 @@
 
     <string name="proPackageName">info.sayederfanarefin.compasspro</string>
 
-    <string name="app_id">ca-app-pub-7807255418905727~6133689008</string>
-    <string name="bottom_ad">ca-app-pub-7807255418905727/8790931495</string>
-    <string name="interstitial">ca-app-pub-7807255418905727/8599359808</string>
+    <string name="app_id">ca-app-pub-dfg~gf</string>
+    <string name="bottom_ad">ca-app-pub-gfg/gf</string>
+    <string name="interstitial">ca-app-pub-gfg/gf</string>
+    <!--<string name="app_id">ca-app-pub-7807255418905727~6133689008</string>-->
+    <!--<string name="bottom_ad">ca-app-pub-7807255418905727/8790931495</string>-->
+    <!--<string name="interstitial">ca-app-pub-7807255418905727/8599359808</string>-->
 
 
 </resources>
